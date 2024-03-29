@@ -10,12 +10,12 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
 		    media : [ //Stimuli content as PIP's media objects
-    		    	{image : 'trump1.jpg'}, 
-			{image : 'trump2.jpg'}, 
+    		   	{image : 'trump1.jpg'}, 
+        		{image : 'trump2.jpg'}, 
         		{image : 'trump3.jpg'},
 			{image : 'trump4.jpg'},
-             		{image : 'trump5.jpg'},
-             		{image : 'trump6.jpg'}
+			{image : 'trump5.jpg'},
+			{image : 'trump6.jpg'}
 		    ], 
 		    //Stimulus css (style)
 		    css : {color:'#31b404','font-size':'3em'}
@@ -34,10 +34,10 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 				{word: 'Angry'},
 				{word: 'Terrible'},
 				{word: 'Tragic'},
-				{word: 'Hate'},
 				{word: 'Destroy'},
-        {word: 'Pain'},
-        {word: 'Sickening'}
+				{word: 'Hate'},
+				{word: 'Pain'},
+				{word: 'Sickening'}
 			], 
 			//Can change color and size of the targets here.
 			css : {color:'#31b404','font-size':'3em'}
@@ -56,16 +56,16 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 				{word: 'Helpful'},
 				{word: 'Joy'},
 				{word: 'Beautiful'},
-				{word: 'Smile'}
-        {word: 'Lovely'},
-        {word: 'Glorious'}
+				{word: 'Smile'},
+				{word: 'Lovely'},
+				{word: 'Glorious'}
 			], 
 			//Can change color and size of the targets here.
 			css : {color:'#31b404','font-size':'3em'}
 			},
 
   base_url : {//Where are your images at?
-    image : 'https://baranan.github.io/minno-tasks/images/'
+    image : 'https://satchmo496.github.io/images/'
   }}
   );
   });
