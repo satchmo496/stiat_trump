@@ -1,0 +1,71 @@
+define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qualtrics/qstiat6.js'], function(APIConstructor, stiatExtension){
+	
+	var API = new APIConstructor();
+		  return stiatExtension({
+		  category : { 
+		    name : 'Trump', //Will appear in the data.
+		    title : {
+		      media : {word : 'Trump'}, //Name of the category presented in the task.
+		      css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+		      height : 7 //Used to position the "Or" in the combined block.
+		    }, 
+		    media : [ //Stimuli content as PIP's media objects
+    		    	{image : 'trump1.jpg'}, 
+			        {image : 'trump2.jpg'}, 
+        		  {image : 'trump3.jpg'},
+			        {image : 'trump4.jpg'},
+              {image : 'trump5.jpg'},
+              {image : 'trump6.jpg'}
+		    ], 
+		    //Stimulus css (style)
+		    css : {color:'#31b404','font-size':'3em'}
+		  },	
+
+  		attribute1 : 
+			{
+			name : 'Bad', //Attribute label
+			title : {
+				media : {word : 'Bad'}, //Name of the category presented in the task.
+				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+				height : 7 //Used to position the "Or" in the combined block.
+			}, 
+			media : [ //Stimuli
+				{word: 'Horrible'},
+				{word: 'Angry'},
+				{word: 'Terrible'},
+				{word: 'Tragic'},
+				{word: 'Hate'},
+				{word: 'Destroy'},
+        {word: 'Pain'},
+        {word: 'Sickening'}
+			], 
+			//Can change color and size of the targets here.
+			css : {color:'#31b404','font-size':'3em'}
+			},
+		attribute2 : 
+			{
+			name : 'Good', //Attribute label
+			title : {
+				media : {word : 'Good'}, //Name of the category presented in the task.
+				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+				height : 7 //Used to position the "Or" in the combined block.
+			}, 
+			media : [ //Stimuli
+				{word: 'Positive'},
+				{word: 'Delight'},
+				{word: 'Helpful'},
+				{word: 'Joy'},
+				{word: 'Beautiful'},
+				{word: 'Smile'}
+        {word: 'Lovely'},
+        {word: 'Glorious'}
+			], 
+			//Can change color and size of the targets here.
+			css : {color:'#31b404','font-size':'3em'}
+			},
+
+  base_url : {//Where are your images at?
+    image : 'https://baranan.github.io/minno-tasks/images/'
+  }}
+  );
+  });
